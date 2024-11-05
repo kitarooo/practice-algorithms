@@ -2,7 +2,7 @@ package lesson1;
 
 import java.util.Scanner;
 
-public class Algo {
+public class Lesson1 {
     public static void main(String[] args) {
 
         // 15.Реализуйте программу, которая запрашивает у пользователя числа,
