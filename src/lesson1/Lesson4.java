@@ -109,7 +109,7 @@ public class Lesson4 {
     }
 
     // 11. Функция для проверки, есть ли два числа в массиве, сумма которых равна target.
-    private static List<String> findPairsWithSum(int[] nums, int target) {
+    private static List<String> task11(int[] nums, int target) {
         List<String> results = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -123,7 +123,7 @@ public class Lesson4 {
     }
 
     // 12. Реализовать пузырьковую сортировку для чисел.
-    private static void bubbleSort(int[] nums) {
+    private static void task12(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             for (int j = 0; j < nums.length - i - 1; j++) {
                 if (nums[j] > nums[j + 1]) {
@@ -136,7 +136,7 @@ public class Lesson4 {
     }
 
     // 13. Проверить, является ли строка палиндромом.
-    private static boolean isPalindrome(String s) {
+    private static boolean task13(String s) {
         int length = s.length();
         for (int i = 0; i < length / 2; i++) {
             if (s.charAt(i) != s.charAt(length - i - 1)) {
@@ -148,7 +148,7 @@ public class Lesson4 {
     }
 
     // 14. Найти все уникальные пары чисел, произведение которых четное.
-    private static List<String> findEvenProductPairs(int[] nums) {
+    private static List<String> task14(int[] nums) {
         List<String> results = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -163,7 +163,7 @@ public class Lesson4 {
     }
 
     // 15. Реализовать сортировку выбором.
-    private static int[] selectionSort(int[] nums) {
+    private static int[] task15(int[] nums) {
         int[] sortedArr = Arrays.copyOf(nums, nums.length);
 
         for (int i = 0; i < sortedArr.length - 1; i++) {
@@ -183,7 +183,7 @@ public class Lesson4 {
     }
 
     // 16. Напишите функцию, которая считает сумму всех чисел от 1 до N и от 1 до K.
-    public int calculateSum(int n, int k) {
+    public int task16(int n, int k) {
         int sumN = 0;
         int sumK = 0;
 
@@ -199,7 +199,7 @@ public class Lesson4 {
     }
 
     // 17. Определите наибольшее число среди чисел N и чисел K.
-    public int findMaxInArrays(int[] numsN, int[] numsK) {
+    public int task17(int[] numsN, int[] numsK) {
         int maxN = Integer.MIN_VALUE;
         int maxK = Integer.MIN_VALUE;
 
@@ -219,7 +219,7 @@ public class Lesson4 {
     }
 
     // 18. Найдите количество цифр в числе и сумму всех чисел от 1 до K.
-    public int[] countDigitsAndSum(int number) {
+    public int[] task18(int number) {
         int digitCount = 0;
         int sum = 0;
         int temp = number;
@@ -237,7 +237,7 @@ public class Lesson4 {
     }
 
     // 19. Напишите программу, которая выводит все простые числа до N и до K.
-    public void printPrimesUpToNAndK(int n, int k) {
+    public void task19(int n, int k) {
         for (int i = 2; i <= n; i++) {
             if (isPrime(i)) {
                 System.out.print(i + " ");
@@ -263,7 +263,7 @@ public class Lesson4 {
     }
 
     // 20. Проверьте, содержат ли числа от 1 до N и от 1 до K хотя бы одно общее число.
-    public boolean hasCommonNumber(int n, int k) {
+    public boolean task20(int n, int k) {
         int min = Math.min(n, k);
 
         for (int i = 1; i <= min; i++) {
@@ -274,7 +274,7 @@ public class Lesson4 {
     }
 
     // 21. Напишите функцию для нахождения всех пар чисел, где одно число из диапазона N, а другое из диапазона K.
-    public List<int[]> findPairs(List<Integer> n, List<Integer> k) {
+    public List<int[]> task21(List<Integer> n, List<Integer> k) {
         List<int[]> pairs = new ArrayList<>();
 
         for (int vN : n) {
